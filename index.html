@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/sty  le.css">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
 
     <main>
         <section id="login">
 
-            <div id="imagem">
-
+            <div class="img">
+                <!-- Aqui vai a imagem nas CSS -->
             </div>
 
-            <div id="formulario">
+            <div class="form">
                 <h1>Login</h1>
 
-                <p>Seja Bem-Vindo</p>
+                <p class="par">Seja Bem-Vindo</p>
 
-                <form action="login.php" method="post"></form>
+                <form action="login.php" method="post">
+                <p>
+                    <label for="iemail">Nome </label><input type="email" name="email" id="iemail" required minlength="10" placeholder="Digite seu e-mail..." autocomplete="email">
+                </p>
+
+                <p>
+                    <label for="isenha">Senha</label>
+                    <input type="password" name="senha" id="isenha" required minlength="6" placeholder="Digite sua senha..." autocomplete="current-password">
+                </p>
+
+                <input type="submit" value="Entrar">
+
+            </form>
+
+
 
             </div>
 
